@@ -88,7 +88,7 @@ class LoginActivity : AppCompatActivity() {
 
             val packageManager = packageManager
 
-            val url = "https://login2-dev.fetnet.net/fetid/fido2Register"
+            val url = "https://login2-dev.fetnet.net/fetidManager/fido2Register"
             val builder = CustomTabsIntent.Builder()
             val customTabsIntent = builder.build()
             val intent = customTabsIntent.intent
@@ -108,7 +108,7 @@ class LoginActivity : AppCompatActivity() {
         Fido登入測試頁面(只有Usernameless流程)
          */
         button_fido_login.setOnClickListener {
-            val url = "https://login2-dev.fetnet.net/fetid/fido2Login"
+            val url = "https://login2-dev.fetnet.net/fetidManager/fido2Login"
             val builder = CustomTabsIntent.Builder()
             val customTabsIntent = builder.build()
             customTabsIntent.launchUrl(this, Uri.parse(url))
@@ -118,7 +118,7 @@ class LoginActivity : AppCompatActivity() {
         Fido登入測試頁面(Usernameless+Passwordless流程)
          */
         button_fido_login2.setOnClickListener {
-            val url = "https://login2-dev.fetnet.net/fetid/fido2Login2"
+            val url = "https://login2-dev.fetnet.net/fetidManager/fido2Login2"
             val builder = CustomTabsIntent.Builder()
             val customTabsIntent = builder.build()
             customTabsIntent.launchUrl(this, Uri.parse(url))
